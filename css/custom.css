@@ -1,0 +1,110 @@
+/* CSS Document */
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+header .navbar {
+    padding: .1rem 0;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    color: black;
+    transition: color 0.2s, border-top 0.2s;
+    padding: 1.5rem .6rem;
+    border-top: 4px solid white;
+    position: relative;
+}
+
+header li.nav-item .dropdown-menu {
+    border-radius: 0;
+    top: 98%;
+    border-color: lightgray;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 0px 6px rgba(0, 0, 0, 0.23);
+    background-color: transparent;
+}
+
+header li.nav-item .dropdown-menu .dropdown-item {
+    transition: color 0.3s;
+}
+
+header li.nav-item .dropdown-menu .dropdown-item:hover {
+    color: #32c5de;
+    background-color: transparent;
+}
+
+header li.nav-item .dropdown-menu::before {
+    position: absolute;
+    opacity: 0.9;
+    background-color: white;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header li.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+header li.nav-item:hover a.nav-link {
+    border-top: 4px solid #32c5de;
+    color: #32c5de!important;
+}
+
+header .widget {
+    position: relative;
+    padding: 0.1rem 0.5rem 0.2rem 0.5rem;
+    background-color: #787878;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: none;
+    font-weight: ;
+    border-radius: 3px;
+    color: white!important;
+}
+
+header .widget:hover {
+    background-color: #32c5de;
+}
+header #shopping-cart {
+    background-color: #32c5de;
+}
+
+header #shopping-cart span {
+    position: absolute;
+    right: -15%;
+    top: -15%;
+}
+header #search input{position:absolute;padding: 0.1rem 0.5rem 0.2rem 0.5rem;left:0;}
+article {
+    background-color: #F5F5F5;
+}
+article .title{position:relative; text-transform: uppercase; letter-spacing: .2rem; font-weight:bold;}
+article .title::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -.5rem;
+    width: 70%;
+    height: 1px;
+    background-color: black;
+}
+article .title::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -.5rem;
+    width: 100%;
+    height: 1px;
+    background-color: #007bff;
+}
+article .prdt{border-radius: 0;}
+article .price{border-right: solid 1px gray;}
