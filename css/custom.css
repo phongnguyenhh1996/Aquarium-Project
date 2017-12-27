@@ -40,11 +40,17 @@ nav {
     letter-spacing: 2px;
 }
 
-nav .navbar-nav .nav-link {
-    color: white!important;
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 6px 6px rgba(0, 0, 0, 0.6);
+    transition: color 0.3s;
 }
-
+.navbar-dark .navbar-nav .active>.nav-link,.navbar-dark .navbar-nav .nav-link:hover{
+  color: rgb(0, 206, 241);
+}
+nav ul li:hover>header{
+  background-color: rgba(0, 0, 0, .3);
+}
 nav ul li {
     padding-left: .8rem;
     padding-right: .8rem;
@@ -83,7 +89,7 @@ nav ul li:last-child{
     top: .9rem;
 }
 .ticket{
-  padding: .5rem 1.1rem;
+  padding: .5rem 2rem;
   float: right;
   background-color: #F95D62;
   font-weight: bold;
@@ -96,4 +102,11 @@ nav ul li:last-child{
   text-decoration: none;
   background-color: white;
   color: #F95D62;
+}
+.search{
+  padding: .5rem;
+  padding-left: 1.2rem;
+}
+.search a{
+  color: white;
 }
