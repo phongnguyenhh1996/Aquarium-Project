@@ -54,16 +54,16 @@ nav ul li:last-child{
 }
 .timer {
     color: white;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
     background-color: rgba(255, 255, 255, 0.2);
-    font-size: .9rem;
+    font-size: 90%;
     margin-left: 7%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding-right: 0;
 }
 .timer span {
     padding: .6rem;
     margin-left: .7rem;
+    float: left;
     
 }
 .timer span:first-child{
@@ -71,7 +71,7 @@ nav ul li:last-child{
   padding-right: .9rem;
   position: relative;
 }
-.timer strong{font-size:1.2rem; padding-right:.3rem; padding-left:.3rem;}
+.timer strong{padding-right:.3rem; padding-left:.3rem;}
 .timer span:first-child::before {
     position: absolute;
     content: "";
@@ -83,6 +83,17 @@ nav ul li:last-child{
     top: .9rem;
 }
 .ticket{
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding: .5rem 1.1rem;
+  float: right;
+  background-color: #F95D62;
+  font-weight: bold;
+  color: white;
+  border: .1rem solid #F95D62;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+.ticket:hover{
+  text-decoration: none;
+  background-color: white;
+  color: #F95D62;
 }
