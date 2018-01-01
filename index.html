@@ -24,11 +24,36 @@
     <header ng-include="'common/header.html'">
     </header>
     <section class="container-fluid hello">
-        <p>DOWNTOWN AQUARIUM</p>
+        <p class="pb-2">DOWNTOWN AQUARIUM</p>
         <h1>KẾT NỐI<br><i>với</i><br><span><i>ĐẠI DƯƠNG</i></span></h1>
+        <div class="scroll-effect">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </section>
     <section class="container-fluid intro">
-        <h1>section 2</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="images/intro.jpg" alt="Intro AQUARIUM">
+            </div>
+            <div class="col-md-6 content pt-lg-4 pt-0">
+                <h1>DOWNTOWN AQUARIUM</h1>
+                <p>Nhiệm vụ của chúng tôi là đem lại sự giải trí, giáo dục, truyền cảm hứng cho việc quản lý môi trường tự nhiên.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid intro" style="background-color: rgba(14,50,72,0.75);">
+        <div class="row">
+            <div class="col-md-6 content pt-lg-4 pt-0">
+                <h2>TÌM HIỂU <small><i>và</i></small><br>KHÁM PHÁ</h2>
+                <p>Downtown Aquarium giúp bạn gần hơn với môi trường sinh vật biển đa dạng và phong phú với hàng nghìn loài từ khắp thế giới.</p>
+                <a href="#" class="btn mt-3">KHÁM PHÁ NGAY</a>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="images/intro-explore.jpg" alt="Intro Explore">
+            </div>
+        </div>
     </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -37,24 +62,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        jQuery.scrollSpeed(100, 800);
-        $(document).ready(function(){
-        setInterval(function(){
+    jQuery.scrollSpeed(100, 800);
+    $(document).ready(function() {
+        setInterval(function() {
             var d = new Date();
             var h = d.getHours();
-            var m = d.getMinutes();
-            if (h>=8 && h<=20)
-            {
-                 $(".status").text("ĐANG MỞ CỬA");
-                 $(".status").removeClass("offline");
-            }
-            else{
+            if (h >= 8 && h <= 20) {
+                $(".status").text("ĐANG MỞ CỬA");
+                $(".status").removeClass("offline");
+            } else {
                 $(".status").text("ĐANG ĐÓNG CỬA");
                 $(".status").addClass("offline");
             }
-        },1000);
-        
-});
-        
+        }, 1000);
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $("header").addClass("scroll-down");
+            } else {
+                $("header").removeClass("scroll-down");
+            }
+        });
+    });
     </script>
 </body>
