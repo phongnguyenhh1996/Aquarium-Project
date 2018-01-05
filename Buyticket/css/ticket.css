@@ -1,23 +1,24 @@
-.image-background {
+body{
+    background-image: url(../images/aquatarifbandeau.jpg);
+    background-repeat: no-repeat;
+    background-color: #03152a ;
+}
+#main{
+    background-color: white;
+}
+.container {
     width: 100%;
+    padding: 7px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.image-background img {
-    vertical-align: middle;
-    border-style: none;
-    width: 100%;
-}
-.block-citation, .payments{
-    background-color: #f2f2f2;
-    font-family: "lubalinbook";
-    text-align: center;
-    padding: 50px 0;
-    color: #008EFF;
-}
-.block-citation p, .payments p {
+.block-citation p, .payments p{
     margin-top: 0;
     margin-bottom: 0rem;
     font-size: 51px;
     font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
 }
 #prices .row {
     margin-left: 135px;
@@ -78,6 +79,15 @@ small {
 .container p {
     color: gray;
     font-size: 17px;
+}
+.payments p {
+    color: #003375;
+    font-size: 30px;
+
+}
+#left p {
+    text-align: left;
+    margin-left: 150px;
 }
 
 

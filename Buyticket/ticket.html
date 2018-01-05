@@ -16,15 +16,15 @@
     <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:700&amp;subset=vietnamese" rel="stylesheet">
 </head>
-<body>
-    <div class="image-background">
-        <img src="image/aquarium.jpg"/>
-    </div>
+<body ng-app="">
     <header ng-include="'common/header.html'">
+    </header>
+        <section class="default-main">
     <div class="block-citation">
             <p>Giá vé tại quầy vé Downtown</p>
     </div>
-    <section class="container ">
+<div id="main" class="container text-center">
+    <div class="container ">
         <div id="prices">
         <div class="row">
             <h3> Trọn gói: Giá vé tiêu chuẩn + Thuyết minh bằng tai nghe <sup>*</sup>  </h3>
@@ -96,9 +96,9 @@
             <small><b><sup>*</sup>Thuê thiết bị audio tại quầy lễ tân: 3/người lớn; 2/trẻ em(4-10 tuổi)</b></small>
         </div>
     </div>
-    </section>
+    </div>
     <hr>
-    <section class="container text-center">
+    <div class="container text-center">
         <h3>ĐẶT VÉ ONLINE</h3>
         <p>&nbsp</p>
         <p>&nbsp</p>
@@ -176,9 +176,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <hr>
-    <section class="container">
+    <div id="left" class="container">
         <h3>HỘI VIÊN "LẦY LỘI"</h3>
         <h4>Bạn có kế hoạch tham quan nhiều lần trong năm?</h4>
         <p>Hãy xem xét việc làm hội viên thân thiết hằng năm của chúng tôi để được có cơ hội tham quan Downtown Aquarium <strong>KHÔNG GIỚI HẠN</strong></p>
@@ -209,8 +209,9 @@
             </table>
             </div>
         </div>
-    </section>
+    </div>
     <hr>
+ </div>   
 <div class="payments">
     <p>Phương thức thanh toán tại Downtown</p>
     <br>
@@ -224,5 +225,25 @@
         <img src="image/worldpay@2x.png" height="44" width="64"/>
     </div>
 </div>
+</div>
+</section>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jQuery.scrollSpeed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    jQuery.scrollSpeed(100, 800);
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $("header").addClass("scroll-down");
+            } else {
+                $("header").removeClass("scroll-down");
+            }
+        });
+    });
+    </script>
 </body>
 </html>
