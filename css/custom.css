@@ -1,3 +1,6 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
 header{
     position: absolute;
     top: 0;
@@ -11,10 +14,9 @@ header a{
     vertical-align: middle;
     color: white;
     font-weight: bold;
-    font-size: 70%;
     line-height: 1.5rem;
 }
-header a:hover{
+a:hover{
     text-decoration: none;
     color: white;
 }
@@ -36,8 +38,27 @@ section#hello{
     z-index: -99;
 }
 section#hello h1{
-    font-family: 'Rokkitt', serif;
+    font-family: 'Alfa Slab One', cursive;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #FFCD3D;
+}
+section#hello small a{
+    font-size: 2rem;
+    font-family: 'Rokkitt', serif;
+    color: white;
+}
+.btn-custom{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5rem;
+    background-color: #E75405;
+}
+section#hello h6{
+    color: white;
+    letter-spacing: .3rem;
+    line-height: 2rem;
 }
