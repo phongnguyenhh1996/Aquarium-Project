@@ -184,7 +184,7 @@
                         </tr>
                 </table>
                 <div class="row justify-content-center my-lg-3">
-                    <div class="col-md-4" id="member-card">
+                    <div class="col-lg-4 col-6" id="member-card">
                         <img class="img-fluid" src="images/member-cards.png" alt="Member Card">
                     </div>
                 </div>
@@ -213,6 +213,17 @@
     <script>
     jQuery.scrollSpeed(100, 800);
     $(document).ready(function() {
+        setInterval(function() {
+            var d = new Date();
+            var h = d.getHours();
+            if (h >= 8 && h <= 20) {
+                $(".status").text("ĐANG MỞ CỬA");
+                $(".status").removeClass("offline");
+            } else {
+                $(".status").text("ĐANG ĐÓNG CỬA");
+                $(".status").addClass("offline");
+            }
+        }, 1000);
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $("header").addClass("scroll-down");

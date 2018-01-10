@@ -90,20 +90,15 @@ nav ul li:last-child {
 }
 
 .timer span {
-    padding: .6rem;
     float: left;
+    border-top: .1rem solid transparent;
+    border-bottom: .1rem solid transparent;
 }
 .timer .status {
     border-right: solid 1px rgba(255, 255, 255, 0.2);
     padding-right: .9rem;
     position: relative;
 }
-
-.timer strong {
-    padding-right: .3rem;
-    padding-left: .3rem;
-}
-
 .status::before {
     position: absolute;
     content: "";
@@ -118,7 +113,6 @@ nav ul li:last-child {
     background-color: gray;
 }
 .ticket {
-    padding: .5rem 2rem;
     float: right;
     background-color: #F95D62;
     font-weight: bold;
@@ -206,7 +200,7 @@ section.hello::after{
 
 section.intro{
     background-color: rgba(0, 143, 255,0.8);
-    padding: 8rem 5rem;
+    padding: 5rem 5rem 8rem 5rem;
 }
 section.intro img{
     box-shadow: 0 0px 20px rgba(0,0,0,0.79), 0 4px 6px rgba(0,0,0,0.63);
