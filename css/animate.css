@@ -570,6 +570,7 @@
 
 .fadeIn {
   animation-name: fadeIn;
+  animation-delay: .5s;
 }
 
 @keyframes fadeInDown {
@@ -618,7 +619,7 @@
 
 .fadeInLeft {
   animation-name: fadeInLeft;
-  animation-delay: .3s;
+  animation-delay: .5s;
 }
 
 @keyframes fadeInLeftBig {
@@ -651,7 +652,7 @@
 
 .fadeInRight {
   animation-name: fadeInRight;
-  animation-delay: .3s;
+  animation-delay: .5s;
 }
 
 @keyframes fadeInRightBig {
@@ -684,6 +685,7 @@
 
 .fadeInUp {
   animation-name: fadeInUp;
+  animation-delay: .5s;
 }
 
 @keyframes fadeInUpBig {

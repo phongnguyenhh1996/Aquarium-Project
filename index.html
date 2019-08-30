@@ -7,225 +7,177 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/ticket.css">
     <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Font Google -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=vietnamese" rel="stylesheet">
 </head>
 
 <body ng-app="">
     <header ng-include="'common/header.html'">
     </header>
-    <div class="block-citation">
-            <p>Giá vé tại quầy vé Downtown</p>
-    </div>
-    <section class="container ">
-        <div id="prices">
+    <section class="container-fluid" id="hello">
+        <div id="background-img">
+        </div>
+        <div class="row pt-md-2">
+            <div class="col-md-4 mx-auto">
+                <a href="#"><img src="images/logo.png" class="img-fluid" alt="Aquarium"></a>
+            </div>
+            <h1 class="pl-md-5 pt-md-5 ml-md-5 mt-md-5 w-100">Thế Giới<br>Đại Dương<br><small><a href="#">KHÁM PHÁ NGAY +</a></small></h1>
+            <div class="pl-0 col-md-10 pl-md-5 ml-md-5 mt-md-5"><a href="#" class="btn-custom p-2 px-md-4 py-md-3">MUA VÉ ONLINE &nbsp&nbsp&nbsp<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a></div>
+            <h6 class="w-100 text-center mt-md-5 pt-md-5"><a href="#explore" class="text-light">ĐẮM MÌNH VÀO ĐẠI DƯƠNG RỘNG LỚN<br><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></a></h6>
+        </div>
+    </section>
+    <section class="container-fluid" id="explore">
         <div class="row">
-            <h3> Trọn gói: Giá vé tiêu chuẩn + Thuyết minh bằng tai nghe <sup>*</sup>  </h3>
-            <table>
-                <tr>
-                    <th>&nbsp</th>
-                    <th>NGƯỜI LỚN</th>
-                    <th>TRẺ EM <br> (3-10 tuổi)</th>
-                    <th>HỌC SINH, SINH VIÊN</th>
-                    <th>DƯỚI 3 TUỔI</th>
-                </tr>
-                <tr>
-                    <td>TẠI QUẦY VÉ</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td>NGƯỜI KHUYẾT TẬT</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td>GIA ĐÌNH<br> <small>(Từ 2 người lớn và 2 trẻ em trở lên)</small></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Free</td>
-                </tr>
-            </table>
-            <small> <b><sup>*</sup> Thuyết minh bằng tai nghe là cách hoàn hảo để khám phá và trải nghiệm tốt nhất</b></small>
+            <div class="col-md-12">
+                <div class="row mx-md-5">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6 pt-md-4 pl-md-4" id="explore-1">
+                                <h3 class="explore-title pb-md-3">Khám phá hơn 600 loài</h3>
+                                <a href="#" class="more">XEM THÊM</a>
+                            </div>
+                            <div class="col-md-6 px-md-0">
+                                <img src="images/whitetip-reef-shark.jpg" class="img-fluid">
+                                <div class="love-explore p-4"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>764</span></div>
+                                <div class="species-explore px-4 pb-3">CÁ MẬP SAN HÔ ĐẦU ĐEN
+                                    <br><span class="font-italic font-weight-normal">Carchahinus melanosperus</span><sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></div>
+                            </div>
+                            <div class="col-md-6 px-md-0">
+                                <img src="images/clown-fish.jpg" class="img-fluid">
+                                <div class="love-explore p-4"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>764</span></div>
+                                <div class="species-explore px-4 pb-3">CÁ HỀ CAM
+                                    <br><span class="font-italic font-weight-normal">Amphirion percula</span><sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></div>
+                            </div>
+                            <div class="col-md-6 px-md-0">
+                                <img src="images/Sea_Nettle.jpg" class="img-fluid">
+                                <div class="love-explore p-4"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>764</span></div>
+                                <div class="species-explore px-4 pb-3">SỨA BIỂN BẮC
+                                    <br><span class="font-italic font-weight-normal">Chrysaora melanaster</span><sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></div>
+                            </div>
+                            <div class="col-md-12 mt-md-3 mt-lg-5">
+                                <div class="row">
+                                    <div class="col-md-2 px-md-0">
+                                        <img src="images/travellerchoices_2015.jpg" alt="TripAdVisor">
+                                    </div>
+                                    <div class="col-lg-5 col-md-10 pt-md-2 pl-md-5 pl-lg-0">
+                                        <h3 class="explore-title mb-0">Aquarium được<br>Du khách yêu thích nhất</h3>
+                                        <p class="mb-1">Được TripAdvisor xếp hạng aquarium
+                                            <br>số 1 tại Việt Nam</p>
+                                        <a href="#" class="more">THÊM THÔNG TIN</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-md-4 px-md-0">
+                        <h3 class="explore-title pb-lg-1 pl-md-5">Đặt vé trực tuyến
+                        </h3>
+                        <p class="pl-md-5">Với vé tiện lợi thẻ flash,
+                            <br>tiết kiệm thời gian tránh rườm rà !</p>
+                        <div class="row pt-lg-3 pb-lg-5 mb-md-3 pl-md-5">
+                            <div class="col-md-10">
+                                <img class="img-fluid" src="images/ticket.jpg" alt="Ticket" id="flash-ticket">
+                            </div>
+                        </div>
+                        <h5 class="pr-md-5 pl-md-5">Giá chỉ từ <span>14$</span><br><small>(Bao gồm 10$ cho trẻ em 3 tới 17 tuổi)</small></h5>
+                        <a href="#" class="btn-custom w-100 py-md-3 px-md-4 mt-lg-5" id="buy-ticket">MUA VÉ NGAY<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="container-fluid" id="audio-guide">
+        <div class="row mx-md-5">
+            <div class="col-md-4 px-md-0" style="background: url('/images/audio-guide.jpg');
+    background-size: cover;">
+                <div class="title-content px-md-4">
+                    <h2 class="pb-lg-5">Audio chỉ dẫn:<br>điều cần thiết để<br>có trải nghiệm tốt nhất</h2>
+                    <p>Kể cả trẻ em vẫn được
+                        <br>sử dụng audio chỉ dẫn<sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></p>
+                </div>
+            </div>
+            <div class="col-md-8 twitter pt-md-5 d-none d-md-block">
+                <i class="fa fa-twitter twitter-icon fa-3x" aria-hidden="true"></i>
+                <h3 class="pt-lg-5 mt-md-5">"Một ngày tuyệt vời tại Aquarium, ở đây thực sự rất thú vị!"</h3>
+                <p><img src="images/avatar.jpg"> @Jacques B.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="news-events">
+        <div class="row mx-md-5">
+            <div class="col-md-8 px-md-0">
+                <img class="img-fluid" src="images/coral.jpg">
+                <div class="px-md-4 pt-md-3" id="news-title">Tin tức & sự kiện<i class="fa fa-circle" aria-hidden="true"></i></div>
+                <div class="title-content px-md-4">
+                    <h2 class="">Loài san hô đang gặp nguy hiểm</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        <br>incididunt ut labore et dolore magna aliqua...</p>
+                </div>
+            </div>
+            <div class="col-md-4 px-md-0 d-none d-md-block" id="news">
+                <div class="title-content px-md-4">
+                    <h2 class="">Aquarium: <br>Một câu chuyện<br>của niềm đam mê</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        <sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="row mx-md-5 px-md-4 py-md-4" id="thanks">
+            <div class="col-md-4 pr-lg-4" id="conservation">
+                <h1 class="pt-md-4">Bảo tồn động vật</h1>
+                <h5>Aquarium của chúng tôi không chỉ đơn giản là thủy cung. Mà còn là trung tâm nghiên cứu, đào tạo và nhận thức về môi trường!<br>
+                Aquarium vẫn sẽ luôn hoạt động mỗi ngày. Cám ơn tất cả các bạn!</h5>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="images/turtle.png" alt="Turtle">
+            </div>
+            <div class="col-md-4">
+                <ul class="pt-md-4 pl-lg-5 ml-lg-5" id="links">
+                    <li class="py-lg-3"><img src="images/conservation-center.png">TRUNG TÂM RÙA BIỂN <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></li>
+                    <li class="py-lg-3"><img src="images/conservation-action.png">HÀNH ĐỘNG VÀ BẢO TỒN <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></li>
+                    <li class="py-lg-3"><img src="images/conservation-world.png">CÔNG TY ĐẦU TƯ <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></li>
+                    <li class="py-lg-3"><img src="images/conservation-blog.png">BLOG HẬU TRƯỜNG <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="gallery">
+        <div class="row mx-md-5">
+            <div class="col-md-4 twitter pt-md-5">
+                <i class="fa fa-twitter twitter-icon fa-3x" aria-hidden="true"></i>
+                <h3 class="pt-md-5 mt-md-5">"Đã có thời gian tuyệt vời!"<br>
+                <span>Aquarium</span><span>ThuyCung</span></h3>
+                <p><img src="images/avatar.jpg"> @AyoubRIADI</p>
+            </div>
+            <div class="col-md-8 px-md-0" style="background: url('/images/gallery-of-light.jpg');
+    background-size: cover;">
+                <div class="title-content px-md-4">
+                    <h1 class="">Phòng trưng bày<br>của<br>Ánh sáng</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor..
+                        <sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="social">
         <div class="row">
-            <h3>Gói thường: Giá vé tiêu chuẩn</h3>
-            <table>
-                <tr>
-                    <th>&nbsp</th>
-                    <th>NGƯỜI LỚN</th>
-                    <th>TRẺ EM <br>(3-10 tuổi)</th>
-                    <th>HỌC SINH, SINH VIÊN</th>
-                    <th>DƯỚI 3 TUỔI</th>
-                </tr>
-                <tr>
-                    <td>TẠI QUẦY VÉ</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td>NGƯỜI KHUYẾT TẬT</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td>GIA ĐÌNH<br> <small>(Từ 2 người lớn và 2 trẻ em trở lên)</small></td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Free</td>
-                </tr>
-            </table>
-
-            <small><b><sup>*</sup>Thuê thiết bị audio tại quầy lễ tân: 3/người lớn; 2/trẻ em(4-10 tuổi)</b></small>
-        </div>
-    </div>
-    </section>
-    <hr>
-    <section class="container text-center">
-        <h3>ĐẶT VÉ ONLINE</h3>
-        <p>&nbsp</p>
-        <p>&nbsp</p>
-       <div class="row"> 
-        <div class="col-xs-12 col-sm-3">
-                <div class="onl">
-                    <h4>VÉ NGÀY<br>-</h4>
-                    <br>
-                    <h6><b>14 USD/người lớn</b></h6>
-                    <br>
-                    <h6><b>10 USD/trẻ em (3-17 tuổi)</b></h6>
-                    <br>
-                    <div class="tabloc2">
-                    <p>
-                        <em>Chỉ dành cho khách hàng đặt vé online</em><br> 
-                        <em>Không thể đặt mua vé và sử dụng cùng ngày</em><br>
-                        <em>Chỉ có giá trị trong ngày đã đặt trước</em>
-                    </p>
-                    <button type="button" class="btn btn-primary">Đặt ngay</button></div>
-                </div>
+            <div class="col-md-12 py-md-4" id="fb">
+                <p class="mb-0">THAM GIA CÙNG CHÚNG TÔI TRÊN</p><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
             </div>
-            <div class="col-xs-12 col-sm-3">
-                <div class="onl">
-                    <h4>GÓI THƯỜNG<br>-</h4>
-                    <br>
-                    <h6><b>16 USD/người lớn</b></h6>
-                    <br>
-                    <h6><b>12 USD/trẻ em (3-17 tuổi</b></h6>
-                    <br>
-                    <div class="tabloc2">
-                    <p>
-                        <em>Có hiệu lực trong vòng 1 năm</em><br> 
-                        <br>
-                        <em>Đặt mua trước thời gian sử dụng 2 tiếng</em>
-                    </p>
-                    <br>
-                    <br>
-                    <button type="button" class="btn btn-primary">Đặt ngay</button></div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-                <div class="onl">
-                    <h4>TRỌN GÓI<br>-</h4>
-                    <br>
-                    <h6><b>18 USD/người lớn </b></h6>
-                    <br>
-                    <h6><b>13 USD/trẻ em (3-17 tuổi)</b></h6>
-                    <br>
-                    <div class="tabloc2">
-                    <p>
-                        <em>Có hiệu lực trong vòng 1 năm </em><br>
-                        <br>
-                        <em>Thuyết minh bằng tai nghe </em><br>
-                        <br>
-                        <em>Đặt mua trước thời gian sử dụng 2 tiếng</em>
-                    </p>
-                    <button type="button" class="btn btn-primary">Đặt ngay</button></div>
-                </div>
-            </div>
-        <div class="col-xs-12 col-sm-3">
-                <div class="onl">
-                    <h4>HỘI VIÊN<br>-</h4>
-                    <br>
-                    <h6><b>40 USD/người lớn</b></h6>
-                    <br>
-                    <h6><b>24 USD/trẻ em (3-17 tuổi</b></h6>
-                    <br>
-                    <div class="tabloc2">
-                    <p>
-                        <em>Tặng áo choàng miễn phí (1sp/người)</em><br> 
-                        <em>Giảm giá 5% khi ăn uống và mua sắm tại hệ thống cửa hàng,nhà hàng của Downtown</em><br>
-                        <em>Nhận thẻ hội viên trong buổi tham quan đầu tiên</em>
-                    </p>
-                    <br>
-                </div>
+            <div class="col-md-12 py-md-4" id="tw">
+                <p class="mb-0">THEO DÕI THÔNG TIN MỚI NHẤT CỦA AQUARIUM TRÊN</p><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
             </div>
         </div>
     </section>
-    <hr>
-    <section class="container">
-        <h3>HỘI VIÊN "LẦY LỘI"</h3>
-        <h4>Bạn có kế hoạch tham quan nhiều lần trong năm?</h4>
-        <p>Hãy xem xét việc làm hội viên thân thiết hằng năm của chúng tôi để được có cơ hội tham quan Downtown Aquarium <strong>KHÔNG GIỚI HẠN</strong></p>
-        <p>Thẻ có giá trị 1 năm kể từ ngày nhận thẻ</p>
-        <p>Tại sao bạn nên chọn làm Hội viên "LẦY LỘI" của chúng tôi:<br>
-            &nbsp- Được tham quan và trải nghiệm Downtown không giới hạn trong 1 năm.<br>
-            &nbsp- Giảm giá 2 USD cho bạn đồng hành của bạn.<br>
-            &nbsp- Thủ tục nhanh chóng và được tặng áo choàng miễn phí.<br>
-            &nbsp- Giảm giá 5% khi ăn uống và mua sắm tại hệ thống cửa hàng,nhà hàng của Downtown.
-        </p>
-        <div id="prices">
-            <div class="row">
-                <table>
-                <tr>
-                    <th>&nbsp</th>
-                    <th>NGƯỜI LỚN</th>
-                    <th>TRẺ EM <br> (3-10 tuổi)</th>
-                    <th>HỌC SINH, SINH VIÊN</th>
-                    <th>NHÓM <br> (từ 4 người trở lên)</th>
-                </tr>
-                <tr>
-                    <td>TẠI QUẦY VÉ</td>
-                    <td>40</td>
-                    <td>24</td>
-                    <td>28</td>
-                    <td>-15%</td>
-                </tr>
-            </table>
-            </div>
-        </div>
-    </section>
-    <hr>
-<div class="payments">
-    <p>Phương thức thanh toán tại Downtown</p>
-    <br>
-    <div>
-        <img src="image/apple-pay@2x.png" height="44" width="64"/>
-        <img src="image/visa-2@2x.png" height="44" width="64"/>
-        <img src="image/amazon@2x.png" height="44" width="64"/>
-        <img src="image/mastercard@2x.png" height="44" width="64"/>
-        <img src="image/cirrus@2x.png" height="44" width="64"/>
-        <img src="image/visa-1@2x.png" height="44" width="64"/>
-        <img src="image/worldpay@2x.png" height="44" width="64"/>
-    </div>
-</div>
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
@@ -234,13 +186,15 @@
     <script>
     jQuery.scrollSpeed(100, 800);
     $(document).ready(function() {
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $("header").addClass("scroll-down");
-            } else {
-                $("header").removeClass("scroll-down");
-            }
+        $(window).scroll(function(e) {
+            parallax();
         });
+
+        function parallax() {
+            var scrolled = $(window).scrollTop();
+            var y = 'translateY(' + (scrolled * 0.25) +'px)';
+            $('#background-img').css('transform',y);
+        }
     });
     </script>
 </body>
